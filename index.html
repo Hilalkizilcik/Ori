@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" href="/assets/images/icon.png" type="image/x-icon" />
+  <title>Ori And The Will Of The Wisps</title>
+</head>
+
+<body>
+
+  <main id="main">
+    <div class="background">
+      <video autoplay loop muted>
+        <source src="assets/video.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="main-content">
+      <div class="logo">
+        <img src="assets/images/logo.png" alt="Ori And The Will Of The Wisps">
+      </div>
+      <nav>
+        <a href="#game" class="text-effect hover">Game</a>
+        <a href="#skills" class="text-effect hover">Skills</a>
+        <a href="#trailer" class="text-effect hover">Watch The Trailer</a>
+        <a href="#contact" class="text-effect hover">Contact</a>
+      </nav>
+    </div>
+    <!-- <button class="btn text-effect">Download</button> -->
+  </main>
+  <section class="game-section" id="game">
+    <div class="game-section-background">
+      <img src="assets/images/maps/skills-wallpaper.webp">
+    </div>
+    <h1 class="text-effect">Game</h1>
+    <div class="swiper game-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="assets/images/maps/slider-1.gif" /></div>
+        <div class="swiper-slide"><img src="assets/images/maps/map2.jpg" /></div>
+        <div class="swiper-slide"><img src="assets/images/maps/slider-3.gif" /></div>
+        <div class="swiper-slide"><img src="assets/images/maps/map4.jpg" /></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <section class="skills-section" id="skills">
+    <div class="skills-section-background">
+      <img src="assets/images/ori-and-the-blind-forest-forest-trees-spirits-wallpaper-preview.jpg">
+    </div>
+    <h1 class="text-effect">Skills</h1>
+    <div class="content">
+      <div class="skills">
+        <div class="skill skill-dash selected" data-title="Bash"
+          data-description="Bash allows Ori to grab various objects, projectiles, and enemies and use them to propel Ori and what Ori has locked onto in opposite directions.  Bash can be used to grab onto lanterns or projectiles and launch Ori into otherwise inaccessible locations.  It can also be used to redirect enemy attacks either to protect Ori or to use them to break down otherwise indestructible objects. ">
+          <img src="assets/images/skills/dash-icon.png" alt="">
+        </div>
+        <div class="skill skill-fly" data-title="Kuro's Feather"
+          data-description="Kuro's Feather is the 7th skill that Ori learns. It allows them to fall very slowly while also being able to glide. It also will lift Ori up if they are inside of a Wind Tunnel. Ori gains this after successfully distracting Kuro who is blocking the path to the Misty Woods.">
+          <img src="assets/images/skills/fly-icon.png" alt="">
+        </div>
+        <div class="skill skill-jump" data-title="Launch"
+          data-description="Launch functions in much the same way as Bash, controlling in the same way but not requiring a Bashable target to be present. Instead, Ori's current location is treated as the Bash target.    Launch can be used in the air or on the ground. In the air, Ori can only Launch once during a jump, reset by touching the ground, performing a normal Bash or using the Grapple. However, performing a Launch will reset all other jump moves (Double Jump and Triple Jump, Dash and the height boost on Spirit Edge's downward strike) in the same way as a Bash or Grapple would.">
+          <img src="assets/images/skills/jump-icon.png" alt="">
+        </div>
+        <div class="skill skill-md" data-title="Spirit Flame"
+          data-description="Spirit Flame is the very first skill Ori learns, and one of only two skills obtained through a Story Event and not an Ancestral Tree. Learned when Ori discovers Sein in the Sunken Glades, Spirit Flame allows Ori to fire Sein's light at an enemy. Provided certain abilities are present, it can hit multiple enemies at once.  The speed and damage of Spirit Flame can be increased by upgrading the Ability Tree on its Offensive Branch.">
+          <img src="assets/images/skills/md-icon.png" alt="">
+        </div>
+        <div class="skill skill-run" data-title="Dash"
+          data-description="Dash is one of the two new skills found in the Ori and the Blind Forest: Definitive Edition. It is received from Eki's ancestral tree in Black Root Burrows. It is the first of the two new skills encountered in the Definitive Edition.">
+          <img src="assets/images/skills/run-icon.png" alt="">
+        </div>
+        <div class="skill skill-shield" data-title="Stomp"
+          data-description="Stomp is the 6th skill Ori learns, and makes them able to hit the ground hard and do damage to nearby enemies and objects, including the ground itself. This skill is earned after you've escaped the Ginso Tree, and walking towards east in the Thornfelt Swamp. The Stomp Attack can be used to do more than to destroy Breakable Floors. Other possible uses include damaging enemies, remove harmful blobs made by certain enemies and repel incoming projectiles. It also destroys Energy Cells and Life Pads.">
+          <img src="assets/images/skills/shield-icon.png" alt="">
+        </div>
+        <div class="skill skill-swim" data-title="Swim Dash" data-description="Swim Dash is an ability found in Ori and the Will of the Wisps.  Swim Dash lets Ori dash in any direction in the water, vertically out of the water, and down into the water from above. It is an extension to Dash, and as such, not having Dash will result in this ability not working either. This is only possible via sequence-breaking.
+        Swim Dash is a passive ability, and does not need to be equpped to use.">
+          <img src="assets/images/skills/swim-icon.png" alt="">
+        </div>
+        <div class="skill skill-ability" data-title="Wall Jump"
+          data-description="Wall Jump is the second skill Ori learns, and the first skill to be had from an Ancestral Tree. Passed on to Ori by the light of Fil, it allows the young spirit to jump up and off of walls, and enables access to areas that cannot be reached by a single jump alone. It is essential to exploring Nibel. The Ancestral Tree for Wall Jump is found deep within the Sunken Glades.">
+          <img src="assets/images/skills/x-icon.png" alt="">
+        </div>
+        <div class="obj3d-area">
+          <div id="obj3d"></div>
+        </div>
+      </div>
+      <div class="skill-description"></div>
+    </div>
+
+    <!-- <div class="sketchfab-embed-wrapper"> <iframe title="Ori from the game "Ori and the Blind Forest"" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/9154a505ba8143cba354d04ac9f7ac29/embed"> </iframe></div>
+    </div> -->
+  </section>
+  <section class="trailer-section" id="trailer">
+    <h1 class="text-effect">Watch The Trailer</h1>
+    <iframe src="https://www.youtube.com/embed/2kPSl2vyu2Y?si=CtXZJV6H-AlQLU2N" title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+    <video class="trailer-section-background" autoplay loop muted>
+      <source src="assets/video2.mp4" type="video/mp4">
+    </video>
+  </section>
+  <div class="footer-area" id="contact">
+    <img class="image" src="assets/images/image1.png">
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="assets/images/logo.png" alt="Ori And The Will Of The Wisps">
+        </div>
+        <div class="social-media">
+          <a href="https://www.instagram.com/hilalkzlck/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://github.com/Hilalkizilcik" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script type="module" src="js/app.js"></script>
+</body>
+
+</html>
